@@ -1,0 +1,26 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+
+\title{Exercicios Infraestrutura Computacional }
+\author{Karoline Rodrigues}
+\begin{document}
+\normalsize
+\maketitle
+\section{Projeto Final}
+\label{sec:projetofinal}
+    O código faz uma chamada api para o site do IBGE,
+    através do protocolo HTTP usando o metodo get.
+
+    Caso o status code da chamada seja de sucesso (200), 
+    o resultado é salvo em um json. Caso outro código seja retornado,
+    como status 404 (not found), 403 (forbidden) por exemplo,
+    ele retorna a mensagem do status code.
+
+    No json é salvo todas informações sobre o CNAE,
+    mas o retorno impresso na tela é apenas o código CNAE e a descrição.
+
+    Depois disso, é usado comando traceroute para verificar a rota
+    até o site do IBGE que também é impresso na tela.
+\end{document}
